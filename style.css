@@ -1,0 +1,157 @@
+/* -------- RESET -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* Défilement fluide */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* -------- HEADER -------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #222;
+  color: white;
+}
+
+header h1 {
+  margin-top: 15px;
+  font-size: 28px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* -------- NAVIGATION -------- */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+/* Soulignement animé */
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: gray;
+  transition: 0.2s;
+  margin: auto;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Effet au clic */
+nav a:active {
+  transform: scale(0.92);
+  background: #444;
+  border-radius: 5px;
+}
+
+
+/* -------- SECTIONS -------- */
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Chaque section apparaît rapidement avec moins de délai */
+section:nth-of-type(1) { animation-delay: 0.1s; }
+section:nth-of-type(2) { animation-delay: 0.2s; }
+section:nth-of-type(3) { animation-delay: 0.3s; }
+section:nth-of-type(4) { animation-delay: 0.4s; }
+section:nth-of-type(5) { animation-delay: 0.5s; }
+section:nth-of-type(6) { animation-delay: 0.6s; }
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+section p, section ul {
+  font-size: 16px;
+}
+
+section:nth-child(even) {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -------- LISTES -------- */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* -------- BOUTONS -------- */
+button {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.92);
+  background: #666;
+}
+
+/* -------- FOOTER -------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 30px;
+}
+
+/* -------- ANIMATIONS -------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
