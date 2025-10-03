@@ -83,7 +83,18 @@ section {
 #acceuil {
   background-color: fuchsia;
 }
-
+#apropos {
+  background-color: aqua;
+}
+#competences {
+  background-color: yellow;
+}
+#projets {
+  background-color: lime;
+}
+#contact {
+  background-color: orange;
+}
 
 /* Chaque section apparaît rapidement avec moins de délai */
 section:nth-of-type(1) { animation-delay: 0.1s; }
