@@ -13,88 +13,100 @@
       content="portfolio, web, développement, HTML, CSS, Python, Kerem Yilmaz"
     />
     <meta name="author" content="Kerem Yilmaz" />
-    <title>mon porte-folio</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio - Kerem Yilmaz</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <img src="asset/monlogo.png" alt="Mon logo" width="200" />
 
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img src="asset/monlogo.png" alt="Mon logo" />
+        <h1>Kerem Yilmaz</h1>
+      </div>
+      <nav>
         <a href="#accueil">Accueil</a>
-        <a href="#Soft Skills"> Soft Skills</a>
-        <a href="#A propos"> A propos</a>
-        <a href="#réalisation">Réalisation</a>
-        <a href="#technologie">Technologie</a>
+        <a href="#softskills">Soft Skills</a>
+        <a href="#apropos">À propos</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#technologie">Technologies</a>
         <a href="#contact">Contact</a>
       </nav>
-      <h1>Bienvenue sur mon porte-folio</h1>
     </header>
-    <section id="accueil">
-      <h2>Accueil</h2>
+
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil" class="hero">
+      <h2>Bienvenue sur mon portfolio</h2>
       <p>
-        Bienvenue sur mon portfolio. Je m’appelle Kerem , étudiant en
-        informatique passionné par le développement web, la cybersécurité et
-        l’intelligence artificielle. Ce site a pour but de présenter mon
-        parcours, mes compétences et mes projets.
+        Étudiant en informatique, passionné par le développement web, la
+        cybersécurité et l’intelligence artificielle.
       </p>
     </section>
-    <section id="Soft Skills">
+
+    <!-- SECTION SOFT SKILLS -->
+    <section id="softskills">
       <h2>Soft Skills</h2>
-      <ul>
-        Au-delà de la technique, je mets en avant mes qualités humaines :
-        Rigueur et sens du détail dans chaque travail. Autonomie et capacité à
-        apprendre rapidement. Esprit d’équipe et leadership naturel. Gestion du
-        stress et organisation, même dans des environnements exigeants.
-      </ul>
+      <div class="cards">
+        <div class="card">Rigueur et sens du détail</div>
+        <div class="card">Autonomie et apprentissage rapide</div>
+        <div class="card">Esprit d’équipe et leadership</div>
+        <div class="card">Gestion du stress et organisation</div>
+      </div>
     </section>
-    <section id="A propos">
-      <h2>A propos</h2>
-      <p>
-        Je suis actuellement étudiant en BTS SIO (Services Informatiques aux
-        Organisations). Mon objectif est de poursuivre en licence informatique,
-        puis d’intégrer une Grande école spécialisée en cybersécurité ou IA. Je
-        suis passionné par les nouvelles technologies et j’aime créer des
-        projets qui allient créativité et logique
-      </p>
+
+    <!-- SECTION A PROPOS -->
+    <section id="apropos">
+      <h2>À propos</h2>
+      <div class="apropos-container">
+        <img src="asset/moi.jpg" alt="Photo de Kerem" />
+        <p>
+          Je suis actuellement étudiant en BTS SIO. Mon objectif est de
+          poursuivre en licence informatique, puis intégrer une Grande école
+          spécialisée en cybersécurité ou IA. J’aime créer des projets qui
+          allient créativité et logique.
+        </p>
+      </div>
     </section>
-    <section id="réalisation">
-      <h2>Réalisation</h2>
-      <p>
-        Voici quelques-unes de mes réalisations récentes : Un site web de
-        portfolio personnel (celui-ci !). Développement d’applications simples
-        pour m’entraîner à la logique de programmation. Projets scolaires et
-        personnels dans lesquels j’ai appliqué mes compétences techniques.
-      </p>
+
+    <!-- SECTION REALISATIONS -->
+    <section id="realisations">
+      <!-- SECTION REALISATIONS -->
+      <section id="realisations">
+        <h2>Mes Réalisations</h2>
+        <div class="grid">
+          <a href="pdf/projet1.pdf" download class="project">Projet 1</a>
+          <a href="pdf/projet2.pdf" download class="project">Projet 2</a>
+        </div>
+      </section>
     </section>
+
+    <!-- SECTION TECHNOLOGIES -->
     <section id="technologie">
-      <h2>Technologie</h2>
-      <p>
-        J’utilise régulièrement plusieurs outils et langages : HTML, CSS →
-        création de sites web modernes. Python → scripts, automatisation et
-        petits projets. Git/GitHub → gestion de versions et travail
-        collaboratif.
-      </p>
+      <h2>Technologies utilisées</h2>
+      <div class="tech-logos">
+        <img src="asset/html.png" alt="HTML" />
+        <img src="asset/css.png" alt="CSS" />
+        <img src="asset/github.png" alt="GitHub" />
+      </div>
     </section>
+
+    <!-- SECTION CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>
-        Vous pouvez me contacter via les réseaux sociaux ou par email :
-        <a href="mailto:kerem2007@hotmail.fr">
-          <button>Envoyer un mail</button>
-        </a>
-        <li>
-          <a href="https://www.linkedin.com" target="_blank">
-            <button>linkedin</button>
-          </a>
-          <a href="https://github.com/kremsshack" target="_blank">
-            <button>GitHub</button>
-          </a>
-        </li>
-      </p>
+      <div class="contact-buttons">
+        <a href="mailto:kerem2007@hotmail.fr" class="btn">📧 Email</a>
+        <a href="https://www.linkedin.com" target="_blank" class="btn"
+          >💼 LinkedIn</a
+        >
+        <a href="https://github.com/kremsshack" target="_blank" class="btn"
+          >💻 GitHub</a
+        >
+      </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
-      <p>Merci de votre visite</p>
+      <p>© 2025 Kerem Yilmaz - Tous droits réservés</p>
     </footer>
   </body>
 </html>

@@ -1,3 +1,4 @@
+
 /* -------- RESET -------- */
 * {
   margin: 0;
@@ -9,7 +10,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1;
-  background: #f5f5f5;
+  background: #801111;
   color: #333;
 }
 
@@ -19,8 +20,8 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 15px 30px;
-  background-color: #222;
-  color: white;
+  background-color: #c2166f;
+  color: rgb(87, 26, 199);
 }
 
 header h1 {
@@ -79,9 +80,11 @@ section {
   transform: translateY(20px);
   animation: fadeUp 0.6s ease forwards;
 }
-
-#acceuil {
-  background-color: fuchsia;
+#SoftSkills {
+  background-color: pink;
+}
+#accueil {
+  background-color: rgb(139, 217, 67);
 }
 #apropos {
   background-color: aqua;
@@ -94,6 +97,12 @@ section {
 }
 #contact {
   background-color: orange;
+}
+#realisations {
+  background-color: violet;
+}
+#technologie {
+  background-color: lightblue;
 }
 
 /* Chaque section apparaît rapidement avec moins de délai */
@@ -132,14 +141,14 @@ ul li {
 
 /* -------- BOUTONS -------- */
 button {
-  background: #222;
+  background: #0ea58c;
   color: white;
   border: none;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.3s ease;
+  ;
 }
 
 button:hover {
