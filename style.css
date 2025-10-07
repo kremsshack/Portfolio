@@ -80,8 +80,8 @@ section {
   transform: translateY(20px);
   animation: fadeUp 0.6s ease forwards;
 }
-#SoftSkills {
-  background-color: pink;
+#softskills {
+  background-color: rgb(214, 141, 153);
 }
 #accueil {
   background-color: rgb(139, 217, 67);
