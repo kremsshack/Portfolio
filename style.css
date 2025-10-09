@@ -17,13 +17,29 @@ body {
 /* -------- HEADER -------- */
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: center;
   align-items: center;
-  padding: 15px 30px;
+  padding: 2px;
   background-color: #c2166f;
   color: rgb(87, 26, 199);
 }
-
+header {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 30px;
+}
+.logo img {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+  animation: fadeIn 0.5s ease-in-out;
+}
 header h1 {
   margin-top: 15px;
   font-size: 28px;
@@ -36,15 +52,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
+  width: 100%;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  position: relative;
-  padding: 5px 10px;
+  font-size: 20px;
+  padding: 30px 10px;
   transition: all 0.2s ease;
 }
 
@@ -72,7 +88,61 @@ nav a:active {
 
 
 /* -------- SECTIONS -------- */
-section {
+#accueil {
+  padding: 100px 20px;
+  text-align: center;
+  background: #c2166f;
+    animation: fadeIn 0.6s ease forwards;
+}
+ #softskills {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;}
+
+#apropos {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;}
+
+ #competences {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;}
+
+ #projets {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;}
+
+ #contact {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;}
+
+ #realisations { 
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;}
+
+ #technologie {
   padding: 80px 20px;
   max-width: 900px;
   margin: auto;
@@ -84,10 +154,10 @@ section {
   background-color: rgb(214, 141, 153);
 }
 #accueil {
-  background-color: rgb(139, 217, 67);
+  background-color: rgb(15, 174, 202);
 }
 #apropos {
-  background-color: aqua;
+  background-color: rgb(192, 155, 31);
 }
 #competences {
   background-color: yellow;
@@ -96,7 +166,7 @@ section {
   background-color: lime;
 }
 #contact {
-  background-color: orange;
+  background-color: rgb(255, 65, 65);
 }
 #realisations {
   background-color: violet;
@@ -127,6 +197,16 @@ section:nth-child(even) {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  font-size: 120px;
+  margin-bottom: 60px;
+  color: #000000;
+}
+p1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 /* -------- LISTES -------- */
