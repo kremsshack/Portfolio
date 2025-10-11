@@ -1,4 +1,3 @@
-
 /* -------- RESET -------- */
 * {
   margin: 0;
@@ -86,110 +85,117 @@ nav a:active {
   border-radius: 5px;
 }
 
-
 /* -------- SECTIONS -------- */
 #accueil {
   padding: 100px 20px;
   text-align: center;
   background: #c2166f;
-    animation: fadeIn 0.6s ease forwards;
+  animation: fadeIn 0.6s ease forwards;
+  background-color: rgb(15, 174, 202);
 }
- #softskills {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;}
-
-#apropos {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;}
-
- #competences {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;}
-
- #projets {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;}
-
- #contact {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;}
-
- #realisations { 
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;}
-
- #technologie {
+#softskills {
   padding: 80px 20px;
   max-width: 900px;
   margin: auto;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.6s ease forwards;
-}
-#softskills {
   background-color: rgb(214, 141, 153);
 }
-#accueil {
-  background-color: rgb(15, 174, 202);
-}
+
 #apropos {
   background-color: rgb(192, 155, 31);
+  transform: translateX(500px);
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
+.apropos-container img {
+  transform: translateX(-1100px);
+  width: 600px;
+  height: 200px;
+}
+
 #competences {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
   background-color: yellow;
 }
+
 #projets {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
   background-color: lime;
 }
+
 #contact {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
   background-color: rgb(255, 65, 65);
 }
+
 #realisations {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
   background-color: violet;
 }
+
 #technologie {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
   background-color: lightblue;
 }
 
 /* Chaque section apparaît rapidement avec moins de délai */
-section:nth-of-type(1) { animation-delay: 0.1s; }
-section:nth-of-type(2) { animation-delay: 0.2s; }
-section:nth-of-type(3) { animation-delay: 0.3s; }
-section:nth-of-type(4) { animation-delay: 0.4s; }
-section:nth-of-type(5) { animation-delay: 0.5s; }
-section:nth-of-type(6) { animation-delay: 0.6s; }
+section:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+section:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+section:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+section:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+section:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+section:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
 
 section h2 {
   font-size: 24px;
   margin-bottom: 15px;
   color: #222;
+  font-weight: bold;
 }
 
-section p, section ul {
+section p,
+section ul {
   font-size: 16px;
 }
 
@@ -228,7 +234,6 @@ button {
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
-  ;
 }
 
 button:hover {
@@ -252,11 +257,23 @@ footer {
 
 /* -------- ANIMATIONS -------- */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
