@@ -9,20 +9,36 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1;
-  background: #f5f5f5;
+  background: #801111;
   color: #333;
 }
 
 /* -------- HEADER -------- */
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: center;
   align-items: center;
-  padding: 15px 30px;
-  background-color: #222;
-  color: white;
+  padding: 2px;
+  background-color: #c2166f;
+  color: rgb(87, 26, 199);
 }
-
+header {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 30px;
+}
+.logo img {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+  animation: fadeIn 0.5s ease-in-out;
+}
 header h1 {
   margin-top: 15px;
   font-size: 28px;
@@ -35,15 +51,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
+  width: 100%;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  position: relative;
-  padding: 5px 10px;
+  font-size: 20px;
+  padding: 30px 10px;
   transition: all 0.2s ease;
 }
 
@@ -69,32 +85,154 @@ nav a:active {
   border-radius: 5px;
 }
 
-
 /* -------- SECTIONS -------- */
-section {
+#accueil {
+  padding: 100px 20px;
+  text-align: center;
+  background: #c2166f;
+  animation: fadeIn 0.6s ease forwards;
+  background-color: rgb(15, 174, 202);
+}
+#apropos {
+  gap: 20px;
+  padding: 110px 10px;
+  background-color: aquamarine;
+  max-width: 600px;
+  border-radius: 8px;
+  margin: 8px;
+}
+#apropos h2 {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+#apropos strong {
+  font-size: 18px;
+  line-height: 1.6;
+  font-size: 20px;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+#realisations {
+  background-color: #90ee90;
+  padding: 110px 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 30px 50px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.project:hover {
+  background-color: #c2166f;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#realisations h2 {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.project:hover {
+  background-color: #c2166f;
+  color: white;
+}
+#softskills {
+  padding: 80px 20px;
+  max-width: 600px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+  background-color: rgb(214, 141, 153);
+}
+
+#competences {
   padding: 80px 20px;
   max-width: 900px;
   margin: auto;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.6s ease forwards;
+  background-color: yellow;
+}
+
+#contact {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+  background-color: rgb(255, 65, 65);
+}
+
+#technologie {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+  background-color: lightblue;
 }
 
 /* Chaque section apparaît rapidement avec moins de délai */
-section:nth-of-type(1) { animation-delay: 0.1s; }
-section:nth-of-type(2) { animation-delay: 0.2s; }
-section:nth-of-type(3) { animation-delay: 0.3s; }
-section:nth-of-type(4) { animation-delay: 0.4s; }
-section:nth-of-type(5) { animation-delay: 0.5s; }
-section:nth-of-type(6) { animation-delay: 0.6s; }
+section:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+section:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+section:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+section:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+section:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+section:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
 
 section h2 {
   font-size: 24px;
   margin-bottom: 15px;
   color: #222;
+  font-weight: bold;
 }
 
-section p, section ul {
+section p,
+section ul {
   font-size: 16px;
 }
 
@@ -102,6 +240,16 @@ section:nth-child(even) {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  font-size: 120px;
+  margin-bottom: 60px;
+  color: #000000;
+}
+p1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 /* -------- LISTES -------- */
@@ -116,14 +264,13 @@ ul li {
 
 /* -------- BOUTONS -------- */
 button {
-  background: #222;
+  background: #0ea58c;
   color: white;
   border: none;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 button:hover {
@@ -147,11 +294,23 @@ footer {
 
 /* -------- ANIMATIONS -------- */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
