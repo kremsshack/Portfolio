@@ -1,4 +1,3 @@
-/* -------- RESET -------- */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   color: #333;
 }
 
-/* -------- HEADER -------- */
 header {
   display: flex;
   flex-direction: column;
@@ -21,7 +19,7 @@ header {
   background-color: #c2166f;
   color: white;
   padding: 20px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
 }
 
 .logo {
@@ -40,8 +38,30 @@ header h1 {
   font-size: 26px;
   font-weight: bold;
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 900px;
+  background: linear-gradient(135deg, #c2166f, #7b1fa2);
+  color: white;
+  padding: 50px 20px;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out;
+}
 
-/* -------- NAVIGATION -------- */
+.hero h3 {
+  font-size: 2.5px;
+  margin-bottom: 15px;
+}
+
+.hero p1 {
+  font-size: 1.2px;
+  max-width: 700px;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -74,7 +94,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* -------- SECTION ACCUEIL -------- */
 #accueil {
   text-align: center;
   padding: 100px 20px;
@@ -92,7 +111,6 @@ nav a:hover::after {
   line-height: 1.5;
 }
 
-/* -------- CONTAINER (A PROPOS + REALISATIONS + IMAGE) -------- */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -103,7 +121,6 @@ nav a:hover::after {
   align-items: start;
 }
 
-/* À propos */
 #apropos {
   grid-column: 1 / -1;
   background-color: aquamarine;
@@ -124,7 +141,6 @@ nav a:hover::after {
   line-height: 1.6;
 }
 
-/* Image zone */
 .image-zone {
   grid-column: 1;
   grid-row: 2;
@@ -142,7 +158,6 @@ nav a:hover::after {
   object-fit: cover;
 }
 
-/* Réalisations */
 #realisations {
   grid-column: 2;
   grid-row: 2;
@@ -180,7 +195,6 @@ nav a:hover::after {
   transform: scale(1.05);
 }
 
-/* -------- SOFT SKILLS -------- */
 #softskills {
   background: linear-gradient(135deg, #f7b6d2, #ffd6d6);
   text-align: center;
@@ -189,7 +203,6 @@ nav a:hover::after {
   margin: 60px auto;
   width: 90%;
   max-width: 1000px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #softskills h2 {
@@ -215,16 +228,13 @@ nav a:hover::after {
   border-radius: 8px;
   font-size: 18px;
   font-weight: 600;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 #softskills li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* -------- TECHNOLOGIES -------- */
 #technologie {
   background: linear-gradient(135deg, #b3e5fc, #81d4fa);
   text-align: center;
@@ -233,7 +243,6 @@ nav a:hover::after {
   width: 90%;
   max-width: 1000px;
   margin: 60px auto;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #technologie h2 {
@@ -253,15 +262,14 @@ nav a:hover::after {
 .tech-logos img {
   width: 190px;
   transition: transform 0.3s ease, filter 0.3s ease;
-  filter: grayscale(40%);
+  filter: grayscale(30%);
 }
 
 .tech-logos img:hover {
-  transform: scale(1.1);
+  transform: scale(3);
   filter: grayscale(0%);
 }
 
-/* -------- CONTACT -------- */
 #contact {
   background: linear-gradient(135deg, #3b156d, #ff5252);
   text-align: center;
@@ -303,7 +311,6 @@ nav a:hover::after {
   transform: scale(1.08);
 }
 
-/* -------- FOOTER -------- */
 footer {
   text-align: center;
   padding: 20px;
@@ -313,7 +320,6 @@ footer {
   font-size: 14px;
 }
 
-/* -------- ANIMATIONS -------- */
 @keyframes fadeIn {
   from {
     opacity: 0;
