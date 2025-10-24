@@ -183,6 +183,8 @@ nav a:hover::after {
   padding: 80px 20px;
   border-radius: 10px;
   margin: 60px auto;
+}
+#softskills {
   width: 90%;
   max-width: 1000px;
 }
@@ -196,25 +198,28 @@ nav a:hover::after {
 
 #softskills ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
   padding: 0;
+  justify-items: center;
 }
 
 #softskills li {
   background: white;
   color: #333;
-  padding: 18px 25px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 17px;
   font-weight: 600;
-  transition: transform 0.2s ease;
+  width: 220px;
+  transition: transform 0.3s ease;
 }
 
 #softskills li:hover {
-  transform: translateY(-5px);
+  transform: scale(1.25);
+  background: #c2166f;
+  color: white;
 }
 
 #technologie {
@@ -301,6 +306,21 @@ footer {
   margin-top: 50px;
   font-size: 14px;
 }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: scale(1.5);
+}
+
 @keyframes fadeHero {
   from {
     opacity: 0;
