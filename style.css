@@ -7,9 +7,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background: #960e0e;
   color: #333;
+  line-height: 1.5;
 }
 
 header {
@@ -18,8 +18,8 @@ header {
   align-items: center;
   background-color: #c2166f;
   color: white;
-  padding: 20px 0;
-  animation: fadeIn 1s ease-in-out;
+  padding: 40px 0;
+  animation: fadeHero 1s ease-in-out;
 }
 
 .logo {
@@ -30,36 +30,13 @@ header {
 
 .logo img {
   height: 90px;
-  width: auto;
+  width: 90px;
   border-radius: 50%;
 }
 
 header h1 {
   font-size: 26px;
   font-weight: bold;
-}
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 900px;
-  background: linear-gradient(135deg, #c2166f, #7b1fa2);
-  color: white;
-  padding: 50px 20px;
-  border-radius: 8px;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.hero h3 {
-  font-size: 2.5px;
-  margin-bottom: 15px;
-}
-
-.hero p1 {
-  font-size: 1.2px;
-  max-width: 700px;
 }
 
 nav {
@@ -94,21 +71,27 @@ nav a:hover::after {
   width: 100%;
 }
 
-#accueil {
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #c2166f, #0ea58c);
+  background: linear-gradient(135deg, #f7971e, #00416a);
   color: white;
+  padding: 285px 20px;
+  border-radius: 8px;
+  animation: fadeHero 1s ease-in-out;
 }
 
-#accueil h3 {
-  font-size: 48px;
-  margin-bottom: 25px;
+.hero h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-#accueil p1 {
-  font-size: 20px;
-  line-height: 1.5;
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
 }
 
 .container {
@@ -138,7 +121,6 @@ nav a:hover::after {
 #apropos p {
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.6;
 }
 
 .image-zone {
@@ -153,7 +135,7 @@ nav a:hover::after {
 }
 
 .image-zone img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -174,7 +156,7 @@ nav a:hover::after {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   justify-items: center;
 }
@@ -207,7 +189,7 @@ nav a:hover::after {
 
 #softskills h2 {
   color: #c2166f;
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 30px;
   text-decoration: underline;
 }
@@ -226,7 +208,7 @@ nav a:hover::after {
   color: #333;
   padding: 18px 25px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   transition: transform 0.2s ease;
 }
@@ -247,7 +229,7 @@ nav a:hover::after {
 
 #technologie h2 {
   color: #004d80;
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 30px;
   text-decoration: underline;
 }
@@ -260,9 +242,9 @@ nav a:hover::after {
 }
 
 .tech-logos img {
-  width: 190px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  width: 150px;
   filter: grayscale(30%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .tech-logos img:hover {
@@ -273,7 +255,7 @@ nav a:hover::after {
 #contact {
   background: linear-gradient(135deg, #3b156d, #ff5252);
   text-align: center;
-  padding: 90px 20px;
+  padding: 80px 20px;
   border-radius: 10px;
   width: 90%;
   max-width: 1000px;
@@ -282,7 +264,7 @@ nav a:hover::after {
 }
 
 #contact h2 {
-  font-size: 34px;
+  font-size: 30px;
   margin-bottom: 25px;
   text-decoration: underline;
 }
@@ -319,8 +301,7 @@ footer {
   margin-top: 50px;
   font-size: 14px;
 }
-
-@keyframes fadeIn {
+@keyframes fadeHero {
   from {
     opacity: 0;
     transform: translateY(-20px);
