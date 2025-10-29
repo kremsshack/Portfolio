@@ -19,11 +19,17 @@
 
   <body id="top">
     <header>
-      <div class="top-header">
-        <div class="logo">
-          <img src="asset/monlogo.png" alt="Mon logo" />
-        </div>
+      <div class="logo">
+        <img src="asset/monlogo.png" alt="Mon logo" />
       </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <label for="menu-toggle" class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
 
       <nav>
         <a href="#accueil">Accueil</a>
@@ -38,7 +44,7 @@
     <section id="accueil" class="hero">
       <h3>Bienvenue sur mon portfolio</h3>
       <p>
-        Étudiant en <strong> 1ère année de BTS SIO</strong>, passionné par le
+        Étudiant en <strong>1ère année de BTS SIO</strong>, passionné par le
         développement web, la cybersécurité et l’intelligence artificielle.
       </p>
     </section>
@@ -46,15 +52,12 @@
     <div class="container">
       <section id="apropos">
         <h2>À propos</h2>
-
         <p>
           Je m’appelle Kerem, je suis étudiant en BTS SIO et passionné
           d’informatique depuis longtemps. J’aime apprendre de nouvelles choses,
           surtout dans le développement web et la cybersécurité. Mon but, c’est
           de continuer mes études pour entrer dans une école d’ingénieur et
-          travailler plus tard dans un domaine que j’aime vraiment. Ce
-          portfolio, c’est un peu un aperçu de mon parcours et de ce que j’aime
-          faire.
+          travailler plus tard dans un domaine que j’aime vraiment.
         </p>
       </section>
 
@@ -108,6 +111,15 @@
     <footer>
       <p>© 2025 Kerem Yilmaz - Tous droits réservés</p>
     </footer>
+
     <a href="#top" class="back-to-top">⬆</a>
+
+    <script>
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("menu-toggle").checked = false;
+        });
+      });
+    </script>
   </body>
 </html>
